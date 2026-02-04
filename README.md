@@ -27,5 +27,5 @@ Pakistani renegade tries to reclaim Lahore
 
 ### My links
 - [Youtube](https://www.youtube.com/watch?v=rQG9aUWarwE)
-- [Itch.io]([itch.io/gwynn-c](https://gwynn-c.itch.io/baaghi))
+- [Itch.io](https://gwynn-c.itch.io/baaghi)
 - [Twitter](x.com/mediocregamedev)
