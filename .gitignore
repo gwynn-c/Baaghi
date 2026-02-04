@@ -76,3 +76,5 @@ crashlytics-build.properties
 *.fbx
 2Thesis1Chap/Library/ArtifactDB
 2Thesis1Chap/Library/ArtifactDB-lock
+*.dylib
+*.so
