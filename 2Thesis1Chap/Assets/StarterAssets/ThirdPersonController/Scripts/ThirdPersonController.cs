@@ -160,7 +160,8 @@ namespace StarterAssets
         private void Update()
         {
             _hasAnimator = TryGetComponent(out _animator);
-
+           
+            
             JumpAndGravity();
             GroundedCheck();
             Move();
@@ -179,7 +180,6 @@ namespace StarterAssets
             _animIDFreeFall = Animator.StringToHash("FreeFall");
             _animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
             _animIDCrouch = Animator.StringToHash("Crouch");
-            
         }
 
         private void GroundedCheck()
@@ -295,11 +295,12 @@ namespace StarterAssets
             // update animator if using character
             if (_hasAnimator)
             {
-               
+                _animator.SetBool(_animIDCrouch, _input.crouch);
                 _animator.SetFloat(_animIDSpeed, _animationBlend);
                 _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
-                _animator.SetBool(_animIDCrouch, _input.crouch); 
             }
+
+           
         }
 
         private void JumpAndGravity()

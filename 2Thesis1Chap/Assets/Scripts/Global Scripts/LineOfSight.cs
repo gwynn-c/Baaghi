@@ -10,14 +10,18 @@ public class LineOfSight : MonoBehaviour
     [Range(0,360)]
     public float fieldOfView;
     public List<Transform> playersInView = new List<Transform>();
-    Actor _actor;
+   
     [SerializeField] private LayerMask obstacleMask;
     [SerializeField] private LayerMask targetMask;
+    private Transform playerTransform;
+
+    private Enemy _controller;
 
     private void Awake()
     {
-        _actor = GetComponent<Actor>();
+        _controller = GetComponent<Enemy>();
     }
+    
     void Update()
     {
         FindVisibleTargets();
@@ -39,22 +43,18 @@ public class LineOfSight : MonoBehaviour
                 var distance = Vector3.Distance(transform.position, target.position);
                 if(!Physics.Raycast(transform.position, direction, distance, obstacleMask))
                         playersInView.Add(target);
+                if(playersInView.Count > 0) playerTransform = target;
             }
         }
     }
 
-    public IEnumerator PlayerIsVisible()
+    public bool IsPlayerVisible()
     {
-         if (playersInView.Count <= 0) yield break;
-        while (!playersInView[0].CompareTag("Player"))
-        {
-            _actor.playerInFOV = false;
-            yield return null;
-        }
-
-        yield return new WaitUntil(() => playersInView[0].CompareTag("Player"));
-        _actor.playerInFOV = true;
+        
+        return playersInView.Count > 0;
     }
+
+ 
     private void DrawFieldOfView()
     {
         int stepCount = Mathf.RoundToInt(fieldOfView * meshResolution);

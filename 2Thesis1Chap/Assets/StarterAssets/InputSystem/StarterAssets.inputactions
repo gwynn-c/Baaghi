@@ -44,7 +44,7 @@
                 },
                 {
                     "name": "Attack",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "b6a9c9aa-8f78-4eac-b898-920016668b66",
                     "expectedControlType": "",
                     "processors": "",
@@ -64,6 +64,15 @@
                     "name": "Crouch",
                     "type": "PassThrough",
                     "id": "16276751-13ef-4ad0-a84e-514d14b6763e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "e2604257-8c7d-4cb5-94fc-d0a1963b9769",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -277,6 +286,17 @@
                     "processors": "",
                     "groups": ";KeyboardMouse",
                     "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa2a65a1-3978-4e6f-9047-44e37c6639f1",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

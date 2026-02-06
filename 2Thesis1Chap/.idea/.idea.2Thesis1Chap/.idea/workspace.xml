@@ -4,19 +4,174 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49504127-65b9-4c06-8d34-7723a751a825" name="Changes" comment="" />
+    <list default="true" id="49504127-65b9-4c06-8d34-7723a751a825" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/State Machine/Enemy States.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/State Machine/Enemy States/AwareState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/State Machine/Enemy States/CombatState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/State Machine/Enemy States/CombatState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/State Machine/Enemy States/EnemyBaseState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/State Machine/Enemy States/IdleState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/State Machine/Enemy States/IdleState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stealth Game/DeathState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stealth Game/DeathState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stealth Game/HealthController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stealth Game/HealthController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2Thesis1Chap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2Thesis1Chap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment Textures and Materials/wood1.001.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment Textures and Materials/wood1.001.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Nav Mesh Manager 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Nav Mesh Manager 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Nav Mesh Manager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Nav Mesh Manager.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.001.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.001.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.001__0.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.001__0.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.002.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.002.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.003.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.003.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.006.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.006.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.007.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.007.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.008.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.008.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.009.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.009.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.017.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.017.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stealth Game Scene/NavMesh-Plane.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global Scripts/Actor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global Scripts/Actor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global Scripts/LineOfSight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global Scripts/LineOfSight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/AwareState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/AwareState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/State Machine/Enemy States/AwareState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/BaseState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/BaseState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/CombatState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/CombatState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/EngagedState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/EngagedState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/IPredicate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/IPredicate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/IState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/IState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/PatrolState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/State Machine/Enemy States/PatrolState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/PatrolState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/State Machine/Enemy States/PatrolState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/State Machine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/State Machine/StateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stealth Game/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stealth Game/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stealth Game/EnemyController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stealth Game/EnemyController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stealth Game/GunController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stealth Game/GunController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssets.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssets.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/StarterAssetsThirdPerson.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/StarterAssetsThirdPerson.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerArmature.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerArmature.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_04.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_04.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/03/03a7af8caa5b3494d7bcde166c2dbbe3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0c/0c1c20a0d55fabc13efd5f04a1c14aea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/16/1697e3f0c3933915bf956832ab8d0c94" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/18/18d200625b950fee5165b7c7b5e49bbb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/23/23402f2ec57370d81cf121b971567a13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3c/3cea5eb41e6350cafba295d37dfddb76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3d/3db47acb1d5a35270b22ddde78aa4fd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/44/44c953cf844b35b4c086546d06900b29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/44/44f1f4278df623705fdb5f9e49f78967" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/53/535c9dae8de0eefd51db603743a568cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5e/5e79e9bb955e75bd26caf0e5720be6c0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/65/651eefac7f8fd5a4196b3b5b6f2c9672" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/66/660732e605c717e1f1ab469907ad2630" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/66/661387b47ec361ecb082ad5e988e5a6c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/68/68532389d3e2278478108b5a6a46083b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6c/6c46ece5ada39929d407057450833cb6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/74/74103f4c52bf9c896cb4c502449e441e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/85/858fbba6c539d2e04d8e5c2e5525ed9b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/85/85bda1676fb38fe6a2ff7fe6b5ba50c9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9b/9b125210a461563d33ccfab938178ac3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9b/9b8f15a1c8929bffbb536771ec00242d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9f/9f2d991d87d2c4d2e4a6d87f1ad6a026" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9f/9fe8cee4765ed4272b3a79f6f3beb701" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/be/bedea8c0b8944cc8cdf1e8352fb22c01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c3/c3e0f2f867b9f855f49aa43e952bc306" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c4/c4349bf89a557483bb9ed32a61b0016b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/df/dff865b8da4fdf45df418980e0f3773b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fb/fb5cfb99c0b84cf9edaaa6675a001b28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE-inputdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE-inputdata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.payloads" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.payloads" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag_derived" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag_derived" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag_fsmtime" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag_fsmtime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state.map" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/backend1.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/backend1.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/backend2.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/backend2.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/buildprogram0.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/buildprogram0.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/fullprofile.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/fullprofile.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/tundra.digestcache" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/tundra.digestcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/tundra.log.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/tundra.log.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/BurstCache/JIT/BurstCacheManifest.cm" beforeDir="false" afterPath="$PROJECT_DIR$/Library/BurstCache/JIT/BurstCacheManifest.cm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/BurstCache/JIT/Hashes/a110ffe6b760e4b56cb86ae44bc7857d.bhc" beforeDir="false" afterPath="$PROJECT_DIR$/Library/BurstCache/JIT/Hashes/a110ffe6b760e4b56cb86ae44bc7857d.bhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PreviousActionData.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PreviousActionData.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/PreviousActionStack.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PreviousActionStack.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Search/98957a664bd18c47a3e41b2a0189ef53.33332.b.index" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Search/98957a664bd18c47a3e41b2a0189ef53.33332.b.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Search/transactions.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/a4/a47d89d3c0133b3540f7e99f6b137947.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/a4/a47d89d3c0133b3540f7e99f6b137947.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/d3/d37af076612c47064bab5a6a4d0aaeda.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/d3/d37af076612c47064bab5a6a4d0aaeda.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.InspectorWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.InspectorWindow.pref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEngine.InputSystem.Editor.InputActionsEditorWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEngine.InputSystem.Editor.InputActionsEditorWindow.pref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ilpp.pid" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ilpp.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/OccaSoftware.Crosshairs.Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/OccaSoftware.Crosshairs.Editor.csproj.AssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rhythm Game/BulletController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactables/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="36CyVblQh42pElQTaycQL5lVo10" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,6 +179,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -106,6 +263,11 @@
       <workItem from="1767421374362" duration="2744000" />
       <workItem from="1769536652267" duration="2176000" />
       <workItem from="1770132918183" duration="6141000" />
+      <workItem from="1770226796949" duration="5446000" />
+      <workItem from="1770278394868" duration="2120000" />
+      <workItem from="1770292030646" duration="10865000" />
+      <workItem from="1770318737122" duration="6245000" />
+      <workItem from="1770373086489" duration="8868000" />
     </task>
     <servers />
   </component>

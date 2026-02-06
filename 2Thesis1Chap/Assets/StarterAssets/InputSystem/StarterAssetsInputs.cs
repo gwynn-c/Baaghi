@@ -16,6 +16,7 @@ namespace StarterAssets
 		public bool specialAction;
 		public bool crouch;
 		public bool reload;
+		public bool interact;
 		[Header("Movement Settings")]
 		public bool analogMovement;
 
@@ -66,8 +67,18 @@ namespace StarterAssets
 		{
 			CrouchInput(value.isPressed);
 		}
+
+		public void OnInteract(InputValue value)
+		{
+			InteractInput(value.isPressed);
+		}
 #endif
 		//Custom Inputs
+
+		public void InteractInput(bool newInteractInput)
+		{
+			interact = newInteractInput;
+		}
 		public void AttackInput(bool newAttackInput)
 		{
 			attack = newAttackInput;
