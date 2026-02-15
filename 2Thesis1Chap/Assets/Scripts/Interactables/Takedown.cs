@@ -18,10 +18,13 @@ public class Takedown : MonoBehaviour, IInteractable
 
     public void Interact(Transform interactor)
     {
+
+        if ((transform.position - interactor.position).magnitude <= 2.5f)
+        {
+            interactor.GetComponent<PlayerController>().Takedown();
+            Destroy(gameObject);
+        }
         
-        if((transform.position - interactor.position).magnitude < 1f)
-            Debug.Log("Is Behind");
-        interactor.GetComponent<PlayerController>().Takedown();
     }
 
     public string GetInteractText()

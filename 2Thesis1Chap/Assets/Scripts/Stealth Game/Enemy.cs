@@ -31,6 +31,7 @@ public class Enemy : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
+      
         gun = equippedGunSlot.GetComponentInChildren<GunController>();
         healthController = GetComponent<HealthController>();
     }
@@ -43,6 +44,7 @@ public class Enemy : MonoBehaviour
         var idleState = new IdleState(this, _animator);
         var patrolState = new PatrolState(this, _animator, _agent, patrolRadius);
         var awareState = new AwareState(this, _animator,_agent, detectionTime);
+        
         var combatState = new CombatState(this, _animator, lastKnownPosition, gun, gun.fireRange);
         var deathState = new DeathState(this, _animator);
         

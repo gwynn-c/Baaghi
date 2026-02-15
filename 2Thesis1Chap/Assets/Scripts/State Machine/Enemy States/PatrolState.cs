@@ -18,7 +18,6 @@ public class PatrolState : EnemyBaseState
 
     public override void OnEnter()
     {
-        Debug.Log("Patrol State");
         animator.CrossFade(LocomotionHash, crossFadeDuration);
     }
 

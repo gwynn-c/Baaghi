@@ -16,11 +16,7 @@ public class CombatState : EnemyBaseState
 
     public override void OnEnter()
     {
-        //Check for cover?
-        Debug.Log("Engaging Player in combat");
-        //Check if player is in Line of sight?
-        //Prioritize whether to take cover or shoot? 
-       
+   
     }
 
     public override void Update()

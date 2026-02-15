@@ -1,5 +1,7 @@
-﻿using StarterAssets;
+﻿using System.Collections;
+using StarterAssets;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private GunController equippedGun;
     [SerializeField] private Transform equippedGunSlot;
-
+    public GameObject TakedownTimeLine;
     private void Start()
     {
         _input = GetComponent<StarterAssetsInputs>();
@@ -31,6 +33,17 @@ public class PlayerController : MonoBehaviour
 
     public void Takedown()
     {
-        Debug.Log("Taking Down");
+        TakedownTimeLine.SetActive(true);
+        StartCoroutine(nameof(TakeDownReset));
+    }
+
+    public IEnumerator TakeDownReset()
+    {
+        yield return new WaitUntil(() => TakedownTimeLine.GetComponent<PlayableDirector>().state != PlayState.Playing);
+        TakedownTimeLine.SetActive(false);
+    }
+    public GunController GetEquippedGun()
+    {
+        return equippedGun;
     }
 }

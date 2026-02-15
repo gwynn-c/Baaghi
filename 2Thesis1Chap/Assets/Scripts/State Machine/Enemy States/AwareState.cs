@@ -13,7 +13,6 @@ public class AwareState : EnemyBaseState
     private float currentDetectionTime = 0f;
     public override void OnEnter()
     {
-        Debug.Log("Enemy is Looking for you");
         agent.isStopped = true;
         animator.CrossFade(AwareHash, crossFadeDuration);
         
