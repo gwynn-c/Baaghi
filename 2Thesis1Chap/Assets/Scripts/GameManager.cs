@@ -5,6 +5,9 @@ using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
+using UnityEngine.UI;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +16,10 @@ public class GameManager : MonoBehaviour
     bool hasPressedStart = true;
     [SerializeField] private UnityEvent startGame;
     private IDisposable m_EventListener;
+    [SerializeField] private VideoPlayer introVideoPlayer;
+    public RawImage renderTarget;
+    
+    
     void OnEnable() => m_EventListener =  InputSystem.onAnyButtonPress.Call(AnyButton);
     private void Awake()
     {
@@ -20,7 +27,10 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator Start()
     {
-        yield return new WaitForSeconds(0.5f);
+        //Play a video then Start
+        
+        yield return new WaitForSeconds((float)introVideoPlayer.length + .2f);
+        renderTarget.enabled = false;
         hasPressedStart = false;
         DontDestroyOnLoad(this);
     }
