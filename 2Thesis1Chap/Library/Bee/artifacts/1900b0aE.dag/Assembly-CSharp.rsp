@@ -452,6 +452,7 @@
 "Assets/Scripts/Player/PlayerController.cs"
 "Assets/Scripts/Player/PlayerUIController.cs"
 "Assets/Scripts/Player/TakeDownController.cs"
+"Assets/Scripts/SoundFXManager.cs"
 "Assets/Scripts/State Machine/Enemy States/AwareState.cs"
 "Assets/Scripts/State Machine/Enemy States/CombatState.cs"
 "Assets/Scripts/State Machine/Enemy States/DeathState.cs"

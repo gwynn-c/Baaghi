@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639065061004655951
-    m_Hash: 1535149052
+      ticks: 639068637904329450
+    m_Hash: 1975905434
   m_LockFileStatus:
     m_FilePath: D:/1. Work/3. Unity Projects/Baaghi/2Thesis1Chap/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639065061004884958
-    m_Hash: 3078833357
+      ticks: 639068637905688712
+    m_Hash: 2648806438
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -228,12 +228,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.burst@1.8.25
+- packageId: com.unity.burst@1.8.28
   testable: 0
   isDirectDependency: 1
-  version: 1.8.25
+  version: 1.8.28
   source: 1
-  resolvedPath: D:\1. Work\3. Unity Projects\Baaghi\2Thesis1Chap\Library\PackageCache\com.unity.burst@1df634d836b8
+  resolvedPath: D:\1. Work\3. Unity Projects\Baaghi\2Thesis1Chap\Library\PackageCache\com.unity.burst@07790c2d06d9
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -424,13 +424,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638936354350140000
+  datePublishedTicks: 639052730336850000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.burst@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/burst.git
-    revision: 05afff266a602147349dc3706f2c09210e05ec2f
+    revision: c95bc6caa3b1fff43bc88047ff7da12fb4899bcc
     path: 
   unityLifecycle:
     version: 1.8.25
@@ -444,24 +444,22 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fixed infinite loop and unbounded memory
-    consumption when having a (possibly indirectly) recursive method with the `[MethodImpl(MethodImplOptions.AggressiveInlining)]`
-    attribute\n- Fixes an issue where `math.min` and `math.max` would do signed comparisons
-    on unsigned integers when compiling with `FloatMode.Fast`.\n- Fixed a crash on
-    some Android devices what would be triggered when \"Enable ARMv9 Security Features\"
-    was enabled.\n- Fixed a rare crash that could happen when the Burst package was
-    unloaded.\n- Fixed relocation error when stack protection was enabled on 32-bit
-    Android.\n\n### Added\n- Added LLVM 20 support\n- Added guards to UWP ARM32 to
-    be available only for versions lower than 6.3 [PLAT-15016](https://jira.unity3d.com/browse/PLAT-15016)\n-
-    `FloatMode.Deterministic` is now supported by Burst. Please refer to the documentation
-    for details."}'
+  upmReserved: '{"changelog":"### Added\n\n### Removed\n\n### Changed\n\n### Fixed\n-
+    User-reported copy-paste error `v128` -> `v256` in `v256` constructor description.\n-
+    User-reported typo in user manual, `paraeters` -> `parameters`.\n- Fixed that
+    Burst would miscompile arithmetic under very specific circumstances\n- Fixed
+    that conditionally formatted strings passed to a `[BurstDiscard]`''ed method
+    could lead to stack-overflow\n- Fixed that assert methods supported by Burst
+    wouldn''t throw the correct type\n- Fixed a crash that could happen when calling
+    `[DllImport(\"__Internal\")]` methods that have pointers in their signature\n\n###
+    Known Issues\n\n### Purpose"}'
   assetStore:
     productId: 
-  fingerprint: 1df634d836b8106f13dc82401a91b336d615a874
+  fingerprint: 07790c2d06d99e35fe39459bd582a965d07700c4
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.8.25
-    minimumUnityVersion: 2021.3.0a1
+    minimumUnityVersion: 2022.3.0a1
   compliance:
     status: 0
     violation:
@@ -886,12 +884,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.collections@2.6.2
+- packageId: com.unity.collections@2.6.4
   testable: 0
   isDirectDependency: 1
-  version: 2.6.2
+  version: 2.6.4
   source: 1
-  resolvedPath: D:\1. Work\3. Unity Projects\Baaghi\2Thesis1Chap\Library\PackageCache\com.unity.collections@aea9d3bd5e19
+  resolvedPath: D:\1. Work\3. Unity Projects\Baaghi\2Thesis1Chap\Library\PackageCache\com.unity.collections@14e905e9bd30
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -994,18 +992,18 @@ m_ResolvedPackages:
     deprecated: []
   dependencies:
   - name: com.unity.burst
-    version: 1.8.23
+    version: 1.8.25
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.test-framework
     version: 1.4.6
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.5
+    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.0.3
   resolvedDependencies:
   - name: com.unity.burst
-    version: 1.8.25
+    version: 1.8.28
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -1017,7 +1015,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.5
+    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.2.0
   keywords:
@@ -1039,13 +1037,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638950336031850000
+  datePublishedTicks: 639032288291540000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.collections@2.6/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/dots.git
-    revision: 34a49c9a68f70872c0a108dbef6cdea306d6b593
+    revision: 57e44ce5b0bcde27ee6efefec8150a8a9726b461
     path: 
   unityLifecycle:
     version: 2.6.2
@@ -1059,11 +1057,13 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Changed\n\n* Updated Burst dependency to version
-    1.8.23."}'
+  upmReserved: '{"changelog":"### Changed\n\n* Updated the `com.unity.nuget.mono-cecil`
+    dependency to version `1.11.6`\n* Updated the `com.unity.entities` dependency
+    to version `1.4.4`\n\n### Fixed\n\n* Issue when `FixedStringNBytes` is compared
+    to managed `String` to avoid use implicit cast."}'
   assetStore:
     productId: 
-  fingerprint: aea9d3bd5e19f2a90fc3a39919974a5f3613a159
+  fingerprint: 14e905e9bd3097c27fab51925735e18e4d1cc0f9
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.6.2
@@ -1148,139 +1148,6 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.5
     minimumUnityVersion: 2019.4.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.ide.rider@3.0.38
-  testable: 0
-  isDirectDependency: 1
-  version: 3.0.38
-  source: 1
-  resolvedPath: D:\1. Work\3. Unity Projects\Baaghi\2Thesis1Chap\Library\PackageCache\com.unity.ide.rider@1f60b3138684
-  assetPath: Packages/com.unity.ide.rider
-  name: com.unity.ide.rider
-  displayName: JetBrains Rider Editor
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: The JetBrains Rider Editor package provides an integration for using
-    the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
-    .csproj files for code completion and auto-discovery of installations.
-  errors: []
-  versions:
-    all:
-    - 1.0.2
-    - 1.0.6
-    - 1.0.8
-    - 1.1.0
-    - 1.1.1
-    - 1.1.2-preview
-    - 1.1.2-preview.2
-    - 1.1.3-preview.1
-    - 1.1.4-preview
-    - 1.1.4
-    - 1.2.0-preview
-    - 1.2.1
-    - 2.0.0-preview
-    - 2.0.1
-    - 2.0.2
-    - 2.0.3
-    - 2.0.5
-    - 2.0.7
-    - 3.0.1
-    - 3.0.2
-    - 3.0.3
-    - 3.0.4
-    - 3.0.5
-    - 3.0.6
-    - 3.0.7
-    - 3.0.9
-    - 3.0.10
-    - 3.0.12
-    - 3.0.13
-    - 3.0.14
-    - 3.0.15
-    - 3.0.16
-    - 3.0.17
-    - 3.0.18
-    - 3.0.20
-    - 3.0.21
-    - 3.0.22
-    - 3.0.24
-    - 3.0.25
-    - 3.0.26
-    - 3.0.27
-    - 3.0.28
-    - 3.0.31
-    - 3.0.34
-    - 3.0.35
-    - 3.0.36
-    - 3.0.37
-    - 3.0.38
-    - 3.0.39
-    compatible:
-    - 3.0.38
-    - 3.0.39
-    recommended: 3.0.39
-    deprecated:
-    - 3.0.37
-  dependencies:
-  - name: com.unity.ext.nunit
-    version: 1.0.6
-  resolvedDependencies:
-  - name: com.unity.ext.nunit
-    version: 2.0.5
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638938045127600000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: 8a49d81ce92f334a07e3b71a8847b2f60dc12287
-    path: 
-  unityLifecycle:
-    version: 3.0.38
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"- fix a regression, introduced in 3.0.37. New files
-    are not added in the project."}'
-  assetStore:
-    productId: 
-  fingerprint: 1f60b3138684c97af67aa8d911b1632ba916d29d
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 3.0.38
-    minimumUnityVersion: 2021.3.0a1
   compliance:
     status: 0
     violation:
@@ -1811,101 +1678,6 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.nuget.mono-cecil@1.11.5
-  testable: 0
-  isDirectDependency: 1
-  version: 1.11.5
-  source: 1
-  resolvedPath: D:\1. Work\3. Unity Projects\Baaghi\2Thesis1Chap\Library\PackageCache\com.unity.nuget.mono-cecil@d78732e851eb
-  assetPath: Packages/com.unity.nuget.mono-cecil
-  name: com.unity.nuget.mono-cecil
-  displayName: Mono Cecil
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: 'The mono cecil library from https://www.nuget.org/packages/Mono.Cecil/
-
-
-    This
-    package is intended for internal Unity use only. Most Unity users will be better
-    suited using the existing community tooling.
-
-    To avoid assembly clashes,
-    please use this package if you intend to use Mono.Cecil.'
-  errors: []
-  versions:
-    all:
-    - 0.1.6-preview.2
-    - 1.0.0-preview.1
-    - 1.10.0-preview.1
-    - 1.10.1-preview.1
-    - 1.10.1
-    - 1.10.2
-    - 1.11.4
-    - 1.11.5
-    - 1.11.6
-    compatible:
-    - 1.11.5
-    - 1.11.6
-    recommended: 1.11.6
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638729992509040000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.nuget.mono-cecil@1.11/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
-    revision: ab40507b5d82f57a4f34b6d0eacca1d6b170341d
-    path: 
-  unityLifecycle:
-    version: 1.11.5
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 0
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"* This is a verified release of the com.unity.nuget.mono-cecil
-    with embedded dlls of mono-cecil\n* Updated Cecil to 0.11.5 with a grafted patch
-    from this bug fix PR (https://github.com/jbevain/cecil/pull/914)"}'
-  assetStore:
-    productId: 
-  fingerprint: d78732e851eb42273c8e4d97993d3a94b207e570
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.11.5
-    minimumUnityVersion: 2019.4.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
 - packageId: com.unity.package-validation-suite@0.22.0-preview
   testable: 0
   isDirectDependency: 1
@@ -2191,7 +1963,7 @@ m_ResolvedPackages:
     version: 0.1.6-preview.2
   resolvedDependencies:
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.5
+    version: 1.11.6
   keywords: []
   registry:
     id: main
@@ -2291,7 +2063,7 @@ m_ResolvedPackages:
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.burst
-    version: 1.8.25
+    version: 1.8.28
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -2303,13 +2075,13 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.2
+    version: 2.6.4
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.5
+    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.2.0
   - name: com.unity.modules.physics
@@ -2406,7 +2178,7 @@ m_ResolvedPackages:
   - name: com.unity.render-pipelines.core
     version: 17.2.0
   - name: com.unity.burst
-    version: 1.8.25
+    version: 1.8.28
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -2418,13 +2190,13 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.2
+    version: 2.6.4
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.5
+    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.2.0
   - name: com.unity.modules.physics
@@ -2526,7 +2298,7 @@ m_ResolvedPackages:
   - name: com.unity.render-pipelines.core
     version: 17.2.0
   - name: com.unity.burst
-    version: 1.8.25
+    version: 1.8.28
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -2538,13 +2310,13 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.2
+    version: 2.6.4
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.5
+    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.2.0
   - name: com.unity.modules.physics
@@ -2637,9 +2409,9 @@ m_ResolvedPackages:
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.collections
-    version: 2.6.2
+    version: 2.6.4
   - name: com.unity.burst
-    version: 1.8.25
+    version: 1.8.28
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -2651,7 +2423,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.5
+    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.2.0
   - name: com.unity.modules.terrain
@@ -2844,7 +2616,7 @@ m_ResolvedPackages:
   - name: com.unity.render-pipelines.core
     version: 17.2.0
   - name: com.unity.burst
-    version: 1.8.25
+    version: 1.8.28
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -2856,13 +2628,13 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.2
+    version: 2.6.4
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.nuget.mono-cecil
-    version: 1.11.5
+    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.2.0
   - name: com.unity.modules.physics
@@ -3446,134 +3218,6 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.0
     minimumUnityVersion: 2019.2.0a1
-  compliance:
-    status: 0
-    violation:
-      scopePatternExpression: 
-      message: 
-      readMoreLink: 
-- packageId: com.unity.visualscripting@1.9.8
-  testable: 0
-  isDirectDependency: 1
-  version: 1.9.8
-  source: 1
-  resolvedPath: D:\1. Work\3. Unity Projects\Baaghi\2Thesis1Chap\Library\PackageCache\com.unity.visualscripting@b4d700247d4b
-  assetPath: Packages/com.unity.visualscripting
-  name: com.unity.visualscripting
-  displayName: Visual Scripting
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: tool
-  description: 'Visual scripting is a workflow that uses visual, node-based graphs
-    to design behaviors rather than write lines of C# script.
-
-
-    Enabling artists,
-    designers and programmers alike, visual scripting can be used to design final
-    logic, quickly create prototypes, iterate on gameplay and create custom nodes
-    to help streamline collaboration.
-
-
-    Visual scripting is compatible with third-party
-    APIs, including most packages, assets and custom libraries.'
-  errors: []
-  versions:
-    all:
-    - 1.5.0
-    - 1.5.1-pre.3
-    - 1.5.1-pre.5
-    - 1.5.1
-    - 1.5.2
-    - 1.6.0-pre.3
-    - 1.6.0
-    - 1.6.1
-    - 1.7.1
-    - 1.7.2
-    - 1.7.3
-    - 1.7.5
-    - 1.7.6
-    - 1.7.7
-    - 1.7.8
-    - 1.8.0-pre.1
-    - 1.8.0
-    - 1.9.0
-    - 1.9.1
-    - 1.9.2
-    - 1.9.4
-    - 1.9.5
-    - 1.9.6
-    - 1.9.7
-    - 1.9.8
-    - 1.9.9
-    compatible:
-    - 1.9.8
-    - 1.9.9
-    recommended: 1.9.9
-    deprecated:
-    - 1.8.0-pre.1
-  dependencies:
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.ugui
-    version: 2.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-    compliance:
-      status: 0
-      violations: []
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638852496803020000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
-    revision: 2bb93a09becf00b2343d1c670afbf3836f170f55
-    path: 
-  unityLifecycle:
-    version: 1.9.8
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-    isDiscoverable: 1
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fixed broken links to example codes in
-    API documentation.\n\n### Changed\n- Adds alt texts to images in documentation
-    to increase accessibility for screen readers."}'
-  assetStore:
-    productId: 
-  fingerprint: b4d700247d4b84b3360e1afeb054b0bdb201fbc7
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.9.8
-    minimumUnityVersion: 2021.3.0a1
   compliance:
     status: 0
     violation:
@@ -6339,6 +5983,101 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.nuget.mono-cecil@1.11.6
+  testable: 0
+  isDirectDependency: 1
+  version: 1.11.6
+  source: 1
+  resolvedPath: D:\1. Work\3. Unity Projects\Baaghi\2Thesis1Chap\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff
+  assetPath: Packages/com.unity.nuget.mono-cecil
+  name: com.unity.nuget.mono-cecil
+  displayName: Mono Cecil
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: 'The mono cecil library from https://www.nuget.org/packages/Mono.Cecil/
+
+
+    This
+    package is intended for internal Unity use only. Most Unity users will be better
+    suited using the existing community tooling.
+
+    To avoid assembly clashes,
+    please use this package if you intend to use Mono.Cecil.'
+  errors: []
+  versions:
+    all:
+    - 0.1.6-preview.2
+    - 1.0.0-preview.1
+    - 1.10.0-preview.1
+    - 1.10.1-preview.1
+    - 1.10.1
+    - 1.10.2
+    - 1.11.4
+    - 1.11.5
+    - 1.11.6
+    compatible:
+    - 1.11.5
+    - 1.11.6
+    recommended: 1.11.6
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638950052256350000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.nuget.mono-cecil@1.11/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
+    revision: ab40507b5d82f57a4f34b6d0eacca1d6b170341d
+    path: 
+  unityLifecycle:
+    version: 1.11.5
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"* This is a verified release of the com.unity.nuget.mono-cecil
+    with embedded dlls of mono-cecil\n* Updated Cecil to 0.11.5 with a grafted patch
+    from this bug fix PR (https://github.com/jbevain/cecil/pull/914)"}'
+  assetStore:
+    productId: 
+  fingerprint: ecb9724e46fff855c46a4f37f0a3377a3cfffc06
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.11.5
+    minimumUnityVersion: 2019.4.0a1
   compliance:
     status: 0
     violation:

@@ -18,12 +18,13 @@ public class GameManager : MonoBehaviour
     private IDisposable m_EventListener;
     [SerializeField] private VideoPlayer introVideoPlayer;
     public RawImage renderTarget;
-    
+    public AudioClip keyPressAudioClip;
     
     void OnEnable() => m_EventListener =  InputSystem.onAnyButtonPress.Call(AnyButton);
     private void Awake()
     {
         if(Instance == null) Instance = this;
+        else Destroy(this);
     }
     IEnumerator Start()
     {
@@ -37,7 +38,10 @@ public class GameManager : MonoBehaviour
 
     private void AnyButton(InputControl control)
     {
-        if(!hasPressedStart) startGame?.Invoke();
+        if(!hasPressedStart)
+        {
+            startGame?.Invoke();
+        }
     }
     private void OnDisable()
     {
@@ -69,3 +73,4 @@ public class GameManager : MonoBehaviour
             loadingScreenAnimator.SetTrigger("LoadingOff");
     }
 }
+

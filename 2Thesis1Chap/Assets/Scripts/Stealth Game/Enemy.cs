@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     private HealthController healthController;
     public Transform lastKnownPosition;
     public Transform equippedGunSlot;
+    public AudioClip[] AwareSounds;
     StateMachine _stateMachine;
 
     public bool IsEnemyIdle = true;
@@ -43,7 +44,7 @@ public class Enemy : MonoBehaviour
 
         var idleState = new IdleState(this, _animator);
         var patrolState = new PatrolState(this, _animator, _agent, patrolRadius);
-        var awareState = new AwareState(this, _animator,_agent, detectionTime);
+        var awareState = new AwareState(this, _animator,_agent, detectionTime, AwareSounds);
         
         var combatState = new CombatState(this, _animator, lastKnownPosition, gun, gun.fireRange);
         var deathState = new DeathState(this, _animator);

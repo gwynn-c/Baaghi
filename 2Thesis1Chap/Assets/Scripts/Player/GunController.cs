@@ -17,6 +17,10 @@ public class GunController : MonoBehaviour
     public int bulletsLeft, bulletsFired, bulletsPerShot, damage;
     public bool isShooting, isReloading, isReadyToShoot, allowInvoke;
 
+
+    public AudioClip fireAudioClip;
+    public AudioClip[] bulletShellAudioClip;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,11 +54,11 @@ public class GunController : MonoBehaviour
         
     }
     
-    
     public void Shoot(Ray _ray)
     {
         isReadyToShoot = false;
-        
+        SoundFXManager.instance.PlaySingleSoundFXClip(fireAudioClip, gunBarrelTransform.position, 1f);
+        SoundFXManager.instance.PlaySoundFXClip(bulletShellAudioClip, gunBarrelTransform.position, 1f);
         bulletsFired++;
         bulletsLeft--;
      
