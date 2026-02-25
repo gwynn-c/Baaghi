@@ -11,8 +11,8 @@ Pakistani renegade tries to reclaim Lahore
 ## Current Timeline and Roadmap
 - [x] State Machine Implementation
 - [x] Enemy AI and controller
-- [ ] Player Stealth controller
-- [ ] Take down and Finishers
+- [x] Player Stealth controller
+- [x] Take down and Finishers
 - [ ] Polish
 
 ## Resources and references
